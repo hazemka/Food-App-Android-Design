@@ -41,12 +41,13 @@ public class MainActivity extends AppCompatActivity {
         binding.rvPopular.setAdapter(foodAdapter);
         binding.rvPopular.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
     }
-    // here is updating the adapter
+
     public void swipeFragment(Fragment fragment){
         getSupportFragmentManager().beginTransaction()
                 .setCustomAnimations(R.anim.silde_in
                 ,R.anim.fade_out,R.anim.fade_in,R.anim.slide_out)
                 .replace(R.id.main_Container,fragment)
+                .addToBackStack(null)
                 .commit();
     }
 }
