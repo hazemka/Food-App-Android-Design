@@ -5,10 +5,12 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.fooddelivery.adapter.CategoryAdapter;
 import com.example.fooddelivery.adapter.FoodAdapter;
 import com.example.fooddelivery.databinding.ActivityMainBinding;
+import com.example.fooddelivery.fragments.CartFragment;
 import com.example.fooddelivery.model.Category;
 import com.example.fooddelivery.model.Food;
 
@@ -40,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
         FoodAdapter foodAdapter = new FoodAdapter(this,arrayFood);
         binding.rvPopular.setAdapter(foodAdapter);
         binding.rvPopular.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+
+        binding.btnCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                swipeFragment(new CartFragment());
+            }
+        });
     }
 
     public void swipeFragment(Fragment fragment){

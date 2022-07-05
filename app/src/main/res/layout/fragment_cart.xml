@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".fragments.CartFragment" >
 
     <ScrollView
@@ -27,11 +28,11 @@
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="16dp"
                     android:text="My Cart"
                     android:textAlignment="center"
                     android:textColor="#ff3d00"
-                    android:textSize="20sp"
+                    android:textSize="25sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/guideline6"
                     app:layout_constraintStart_toStartOf="@+id/guideline7"
@@ -150,7 +151,7 @@
                     android:layout_marginTop="16dp"
                     android:text="Total:"
                     android:textColor="#373b54"
-                    android:textSize="30sp"
+                    android:textSize="26sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/textView20"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -164,7 +165,7 @@
                     android:layout_marginTop="16dp"
                     android:text="$0"
                     android:textColor="#373b54"
-                    android:textSize="30sp"
+                    android:textSize="26sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/guideline6"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -179,7 +180,7 @@
                     android:text="CheckOut"
                     android:textAllCaps="false"
                     android:background="@drawable/orange_button"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
 
                     app:layout_constraintEnd_toStartOf="@+id/guideline6"
