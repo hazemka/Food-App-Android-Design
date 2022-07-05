@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 .setCustomAnimations(R.anim.silde_in
                 ,R.anim.fade_out,R.anim.fade_in,R.anim.slide_out)
                 .replace(R.id.main_Container,fragment)
-                .addToBackStack(null)
                 .commit();
     }
 }
