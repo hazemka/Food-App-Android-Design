@@ -18,7 +18,6 @@ public class FoodDetailsFragment extends Fragment {
         binding.txtFoodName.setText(requireArguments().getString("title"));
         binding.txtFoodPrice.setText("$"+requireArguments().getString("price"));
         binding.txtDescription.setText(requireArguments().getString("description"));
-        binding.imgFoodDetails.setImageResource(requireArguments().getInt("img"));
         binding.btnPlus.setOnClickListener(view -> {
             int num = Integer.parseInt(binding.txtNum.getText().toString());
             int newNum = (num+1);

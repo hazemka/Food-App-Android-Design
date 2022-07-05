@@ -44,7 +44,6 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
             Bundle bundle = new Bundle();
             bundle.putString("title",data.get(position).getTitle());
             bundle.putString("price",data.get(position).getFee().toString());
-            bundle.putInt("img",data.get(position).getPic());
             bundle.putString("description",data.get(position).getDescription());
             fragment.setArguments(bundle);
             ((MainActivity) activity).swipeFragment(fragment);
